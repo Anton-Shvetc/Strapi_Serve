@@ -1,5 +1,5 @@
 {
-  "name": "darkmood-api",
+  "name": "strapi-serve",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -9,22 +9,22 @@
   },
   "scripts": {
     "build": "strapi build",
-    "dev": "strapi develop",
+    "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.14.5",
-    "@strapi/plugin-users-permissions": "4.14.5",
-    "@strapi/strapi": "4.14.5",
+    "@strapi/plugin-i18n": "4.15.0",
+    "@strapi/plugin-users-permissions": "4.15.0",
+    "@strapi/strapi": "4.15.0",
     "better-sqlite3": "8.6.0"
   },
   "devDependencies": {},
   "engines": {
-    "node": ">=16.0.0 <=20.x.x",
+    "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "442dc180-c84d-4113-816c-2964c7d37448"
+    "uuid": "99286157-2fbc-423c-8380-5fb310df7ba6"
   }
 }
