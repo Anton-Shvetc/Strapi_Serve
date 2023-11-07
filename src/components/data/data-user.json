@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ui_data_users",
+  "info": {
+    "displayName": "dataUser",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "patronymic": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

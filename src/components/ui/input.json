@@ -25,6 +25,9 @@
     "error": {
       "type": "string",
       "required": true
+    },
+    "value": {
+      "type": "string"
     }
   }
 }

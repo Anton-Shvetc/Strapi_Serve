@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_data_data_addresses",
+  "info": {
+    "displayName": "dataAddress"
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

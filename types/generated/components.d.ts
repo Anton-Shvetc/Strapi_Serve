@@ -1,14 +1,30 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface UiButton extends Schema.Component {
-  collectionName: 'components_ui_buttons';
+export interface DataDataAddress extends Schema.Component {
+  collectionName: 'components_data_data_addresses';
   info: {
-    displayName: 'Button';
+    displayName: 'dataAddress';
+  };
+  attributes: {
+    country: Attribute.String;
+    region: Attribute.String;
+    postalCode: Attribute.String;
+    city: Attribute.String;
+    address: Attribute.String;
+  };
+}
+
+export interface DataDataUser extends Schema.Component {
+  collectionName: 'components_ui_data_users';
+  info: {
+    displayName: 'dataUser';
     description: '';
   };
   attributes: {
-    label: Attribute.String & Attribute.Required;
-    href: Attribute.String;
+    firstName: Attribute.String;
+    lastName: Attribute.String;
+    patronymic: Attribute.String;
+    phone: Attribute.String;
   };
 }
 
@@ -19,7 +35,7 @@ export interface UiInputList extends Schema.Component {
     description: '';
   };
   attributes: {
-    input: Attribute.Component<'ui.input', true>;
+    input: Attribute.Component<'ui.input', true> & Attribute.Required;
   };
 }
 
@@ -35,6 +51,7 @@ export interface UiInput extends Schema.Component {
     type: Attribute.String & Attribute.Required;
     idInput: Attribute.String & Attribute.Required;
     error: Attribute.String & Attribute.Required;
+    value: Attribute.String;
   };
 }
 
@@ -64,7 +81,8 @@ export interface UiLink extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'ui.button': UiButton;
+      'data.data-address': DataDataAddress;
+      'data.data-user': DataDataUser;
       'ui.input-list': UiInputList;
       'ui.input': UiInput;
       'ui.link-list': UiLinkList;

@@ -631,7 +631,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: false;
-    timestamps: true;
   };
   attributes: {
     username: Attribute.String &
@@ -660,6 +659,13 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.role'
     >;
+    order: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToOne',
+      'api::order.order'
+    >;
+    dataUser: Attribute.Component<'data.data-user'>;
+    dataAddress: Attribute.Component<'data.data-address'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -918,6 +924,11 @@ export interface ApiOrderOrder extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    users_permissions_user: Attribute.Relation<
+      'api::order.order',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

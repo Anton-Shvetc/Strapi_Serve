@@ -9,7 +9,8 @@
     "input": {
       "type": "component",
       "repeatable": true,
-      "component": "ui.input"
+      "component": "ui.input",
+      "required": true
     }
   }
 }
