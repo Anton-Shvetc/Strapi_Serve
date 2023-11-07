@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_ui_inputs",
+  "info": {
+    "displayName": "input",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "nameInput": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "idInput": {
+      "type": "string",
+      "required": true
+    },
+    "error": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

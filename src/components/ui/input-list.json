@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ui_input_lists",
+  "info": {
+    "displayName": "InputList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "input": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.input"
+    }
+  }
+}
